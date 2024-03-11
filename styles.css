@@ -18,6 +18,8 @@
   padding: 0;
 }
 
+
+
 body {
   font-family: 'outfit', sans-serif;
   background-color: hsl(212, 45%, 89%);
@@ -28,7 +30,7 @@ main {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  /* background-color: green; */
+  background-color: var(--light-grey);
 }
 
 .header {
@@ -41,19 +43,42 @@ main {
 
   h1 {
     font-family: 'Young serif', serif;
+    font-size: 36px;
     font-weight: 400;
     line-height: 1;
-    margin: 10px 15px;
+    margin: 40px 32px 24px;
   }
 
   p {
-    margin: 10px 15px 0;
+    margin: 10px 32px 0;
     line-height: 1.5;
+    color: var(--wenge-brown);
   }
 }
 
+
 .preparation_container {
-  margin: 0 15px;
-  padding: 15px;
+  margin: 32px 15px;
+  padding: 24px;
   background-color: var(--rose-white);
+  border-radius: 12px;
+
+  .title {
+    color: var(--dark-raspberry);
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .list {
+    list-style: inside;
+
+    li {
+      color: var(--wenge-brown);
+      line-height: 24px;
+
+      &::marker {
+        color: var(--dark-raspberry);
+      }
+    }
+  }
 }
